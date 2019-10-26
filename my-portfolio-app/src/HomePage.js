@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfilePicture from './ProfilePicture.jpg';
 import github from './github.png';
+import linkedin from './linkedin.png';
 import './HomePage.css';
 
 function HomePage() {
@@ -14,9 +15,15 @@ function HomePage() {
         <p className="Bio-Text">
           Checkout my github to see some of my work.
         </p>
+        <p/>
+        <div className="IconContainer">
         <a href="http://www.github.com/ciarancoady98">
           <img src={github} className="github" alt="github"/>
         </a>
+        <a href="https://www.linkedin.com/in/ciarancoady/">
+          <img src={linkedin} className="linkedin" alt="linkedin"/>
+        </a>
+        </div>
       </header>
     </div>
   );

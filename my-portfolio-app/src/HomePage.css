@@ -16,6 +16,10 @@
   justify-content: center;
 }
 
+.IconContainer {
+  flex-direction: row;
+}
+
 .Profile-Picture {
   height: 70vmin;
   width: 70vmin;
@@ -33,6 +37,11 @@
 }
 
 .github {
+  height: 5vh;
+  width: 5vh;
+}
+
+.linkedin {
   height: 5vh;
   width: 5vh;
 }
