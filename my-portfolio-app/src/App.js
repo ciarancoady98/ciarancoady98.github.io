@@ -41,9 +41,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header data={this.state.pageData.main} />
-        <About data={this.state.pageData.main} />
+        {/* <About data={this.state.pageData.main} /> */}
         <Work data={this.state.pageData.resume} />
-        <Contact data={this.state.pageData.main} />
+        {/* <Contact data={this.state.pageData.main} /> */}
         <Footer data={this.state.pageData.main} />
       </div>
     );
