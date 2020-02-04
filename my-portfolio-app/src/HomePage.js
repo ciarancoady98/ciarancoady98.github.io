@@ -17,7 +17,7 @@ function HomePage() {
           Hi I'm Ciarán, A Computer Science student with a passion for tech,
           challenges and adventure.
         </p>
-        <p className="Bio-Text">Checkout my github to see some of my work.</p>
+        <p className="Bio-Text">Checkouta my github to see some of my work.</p>
         <p />
         <div className="IconContainer">
           <a href="http://www.github.com/ciarancoady98">
