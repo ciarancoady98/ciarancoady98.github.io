@@ -13,17 +13,18 @@ const divStyle = {
   width: '100vw',
   backgroundSize: 'cover',
   backgroundImage: "url(" + background + ")",
+  backgroundPosition: 'center',
+  backgroundRepeat: 'noRepeat',
   color: 'blue',
   //paddingTop: '5vh',
   //paddingBottom: '5vh',
-  justifyContent: 'center',
+  //justifyContent: 'center',
 };
 
 function App() {
   return (
     <div style={divStyle}>
       <Menu/>
-      <Header/>
     </div>
   );
 }

@@ -19,6 +19,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles({
   list: {
     width: 250,
+    height: 10,
   },
   fullList: {
     width: 'auto',
@@ -28,6 +29,16 @@ const useStyles = makeStyles({
     width: '10vw',
   }
 });
+
+const menuStyle = {
+  display: 'flex',
+  height: '10vh',
+  width: '10vw',
+  color: 'white',
+  //paddingTop: '5vh',
+  //paddingLeft: '5vh',
+  align: 'left',
+};
 
 export default function Menu() {
   const classes = useStyles();
@@ -66,10 +77,19 @@ export default function Menu() {
 
   return (
     <React.Fragment key={"left"}>
-      <IconButton edge="start" className={classes.List} color="inherit" aria-label="menu"
+      <IconButton edge="start" style={menuStyle} color="inherit" aria-label="menu"
         onClick={toggleDrawer("left", true)}>
         <MenuIcon />
       </IconButton>
+      <div style={{flexDirection: 'column', justifyContent: "right", alignItems: "right"}}>
+        <p>
+          More text
+        </p>
+        <p className="Bio-Text">
+          Hi I'm Ciarán, A Computer Science student with a passion for tech,
+          challenges and adventure.
+        </p>
+      </div>
       <Drawer anchor={"left"} open={state["left"]} onClose={toggleDrawer("left", false)}>
         {list("left")}
       </Drawer>
