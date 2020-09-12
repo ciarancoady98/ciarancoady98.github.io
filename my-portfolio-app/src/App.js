@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import ReactGA from "react-ga";
 import $ from "jquery";
-import "./App.css";
-import Header from "./Components/Header";
+import Home from "./Components/Home";
 import Footer from "./Components/Footer";
-import About from "./Components/About";
 import Work from "./Components/Work";
-import Contact from "./Components/Contact";
 
 class App extends Component {
   constructor(props) {
@@ -40,10 +37,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header data={this.state.pageData.main} />
-        {/* <About data={this.state.pageData.main} /> */}
+        <Home data={this.state.pageData.main} />
         <Work data={this.state.pageData.resume} />
-        {/* <Contact data={this.state.pageData.main} /> */}
         <Footer data={this.state.pageData.main} />
       </div>
     );
